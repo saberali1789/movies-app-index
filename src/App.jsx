@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { Container } from "react-bootstrap";
-import "./app.css";
+import "./style/App.css";
 import MoviesList from "./components/MoviesList";
 import NavBar from "./components/NavBar";
 import axios from "axios";
