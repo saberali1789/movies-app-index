@@ -1,13 +1,11 @@
 /* eslint-disable react/prop-types */
 import ReactPaginate from "react-paginate";
 
-const CustomPagination = ({getPage}) => {
+const CustomPagination = ({ getPage, pageCount }) => {
   const handlePageClick = (data) => {
-    getPage(data.selected + 1)
+    getPage(data.selected + 1);
   };
-
-  const pageCount = 500;
-
+  // pageCount=500
   return (
     <ReactPaginate
       breakLabel="..."
@@ -17,8 +15,8 @@ const CustomPagination = ({getPage}) => {
       pageRangeDisplayed={2}
       pageCount={pageCount}
       previousLabel="< السابق"
-      containerClassName={"pagination justify-content-center p-5"} 
-      pageClassName= {"page-item"}
+      containerClassName={"pagination justify-content-center p-5"}
+      pageClassName={"page-item"}
       pageLinkClassName={"page-link"}
       previousClassName={"page-link"}
       nextClassName={"page-link"}
